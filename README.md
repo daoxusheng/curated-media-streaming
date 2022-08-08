@@ -1,22 +1,67 @@
 # Curated List of Media Streaming
 
-> Note: To be further updated.
+> Note: If you have any suggestions, please send a pull request or open an issue.
+
+**Table of Contents**
+
+- [Curated List of Media Streaming](#curated-list-of-media-streaming)
+  * [1. Datasets](#1-datasets)
+    + [1.1 Video Streaming](#11-video-streaming)
+    + [1.2 360° Video Streaming](#12-360--video-streaming)
+    + [1.3 Video and Image Quality Related](#13-video-and-image-quality-related)
+    + [1.4 Network Related](#14-network-related)
+    + [1.5 Others](#15-others)
+  * [2. Code and Tools](#2-code-and-tools)
+    + [2.1 Video Samples and Tools](#21-video-samples-and-tools)
+    + [2.2 Video Codecs](#22-video-codecs)
+    + [2.3 Streaming Tools and Systems](#23-streaming-tools-and-systems)
+    + [2.4 Image and Video Quality](#24-image-and-video-quality)
+    + [2.5 ABR Implementation](#25-abr-implementation)
+    + [2.6 QoE and Quality Models](#26-qoe-and-quality-models)
+    + [2.7 VR or 360° Streaming](#27-vr-or-360--streaming)
+    + [2.8 Others](#28-others)
+  * [3. Standards and White papers](#3-standards-and-white-papers)
+    + [3.1 ITU Standards](#31-itu-standards)
+    + [3.2 Streaming Protocals](#32-streaming-protocals)
+  * [4. Insights and Reports](#4-insights-and-reports)
+  * [5. Other Lists](#5-other-lists)
+
 
 ## 1. Datasets
-### 1.1 Streaming Related
-**The LIVE Series**
+### 1.1 Video Streaming
+**[The LIVE Series](https://live.ece.utexas.edu/research/Quality/index.htm)**
+
+- [LIVE Livestream Database](https://live.ece.utexas.edu/research/LIVE_APV_Study/apv_index.html)
+- [LIVE Mobile Video Quality Database](https://live.ece.utexas.edu/research/Quality/live_mobile_video.html)
+- [LIVE Mobile Video Stall Database-I](https://live.ece.utexas.edu/research/LIVEStallStudy/index.html)
+- [LIVE Mobile Video Stall Database-II](https://live.ece.utexas.edu/research/LIVEStallStudy/liveMobile.html)
+
 - [LIVE-NFLX-I Subjective Video QoE Database](http://live.ece.utexas.edu/research/LIVE_NFLXStudy/nflx_index.html)
 - [LIVE-NFLX-II Subjective Video QoE Database](http://live.ece.utexas.edu/research/LIVE_NFLX_II/live_nflx_plus.html)
+- [LIVE Wild Compressed Video Quality Database](https://live.ece.utexas.edu/research/onestep/index.html)
+- [LIVE QoE Database for HTTP-based Video Streaming](https://live.ece.utexas.edu/research/Quality/TVSQ_VQA_database.html)
+- [LIVE-YouTube High Frame Rate (LIVE-YT-HFR) Database](https://live.ece.utexas.edu/research/LIVE_YT_HFR/LIVE_YT_HFR/index.html)
+- [ETRI-LIVE Space-Time Subsampled Video Quality Database](https://live.ece.utexas.edu/research/ETRI-LIVE_STSVQ/index.html)
+- [LIVE-FB Large-Scale Social Video Quality (LSVQ) Database](https://github.com/baidut/PatchVQ)
 
 **The Waterloo Series**
-- [Waterloo Streaming Quality-of-Experience Database-I](https://ece.uwaterloo.ca/~zduanmu/jstsp16qoe/)
-- [Waterloo Streaming Quality-of-Experience Database-II](https://ece.uwaterloo.ca/~zduanmu/acmmm2017qoe/)
-- [Waterloo Streaming Quality-of-Experience Database-III](https://ece.uwaterloo.ca/~zduanmu/tbc2018qoe/)
-- [Waterloo Streaming Quality-of-Experience Database-IV](https://ece.uwaterloo.ca/~zduanmu/waterloosqoe4/)
+
+- [Waterloo Streaming Quality-of-Experience Database-I](https://ece.uwaterloo.ca/~zduanmu/publications/jstsp16qoe/)
+- [Waterloo Streaming Quality-of-Experience Database-II](https://ece.uwaterloo.ca/~zduanmu/publications/acmmm2017qoe/)
+- [Waterloo Streaming Quality-of-Experience Database-III](https://ece.uwaterloo.ca/~zduanmu/publications/tbc2018qoe/)
+- [Waterloo Streaming Quality-of-Experience Database-IV](https://ece.uwaterloo.ca/~zduanmu/publications/waterloosqoe4/)
 
 **Other Datasets**
+
+- [P.1203 Open Dataset](https://github.com/itu-p1203/open-dataset)
+
+- [Distributed DASH Dataset](https://dash.itec.aau.at/distributed-dash-datset/)
+- [YouTube Dataset on Mobile Streaming (2022)](https://figshare.com/articles/dataset/YouTube_Dataset_on_Mobile_Streaming_for_Internet_Traffic_Modeling_Network_Management_and_Streaming_Analysis/19096823/2)
 - [MultiLive_dataset](https://github.com/STAR-Tsinghua/MultiLive_dataset#multilive_dataset)
+- [i_QoE: A database for individual QoE analysis](http://ii.tudelft.nl/iqlab/iQOE.html)
 - [Brightcove Streaming Datasets](https://github.com/brightcove/streaming-dataset)
+- [Cloud gaming dataset](https://repozitorij.fer.unizg.hr/en/islandora/object/fer:7177)
+- [CGD: A Cloud Gaming Dataset](https://ferhr-my.sharepoint.com/personal/islivar_fer_hr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fislivar%5Ffer%5Fhr%2FDocuments%2FDataset&ga=1)
 - [LFOVIA Video QoE Database](https://www.iith.ac.in/~lfovia/downloads.html#:~:text=LFOVIA%20Video%20QoE%20Database.)
 - [FacebookVideosLive18 Dataset](https://sites.google.com/view/facebookvideoslive18/home)
 - [Open Dataset from ITU-T P.1203 Standardization](https://github.com/itu-p1203/open-dataset)
@@ -25,10 +70,13 @@
 **Encrypted Traffic**
 - [RequetDataSet for Encrypted Youtube Traffic QoE](https://github.com/Wimnet/RequetDataSet)
 
-### 1.2 360° Streaming
+### 1.2 360° Video Streaming
 - [360° Streaming Video Subjective Test Dataset](https://zenodo.org/record/4090961)
 - [A Taxonomy and Dataset for 360-degree Videos](https://github.com/afshin-aero/360dataset)
 - [User Behaviors in viewport-aware dynamic 360 videos](https://github.com/360VidStr/A-large-dataset-of-360-video-user-behaviour)
+- [VR User Behaviour](https://v-sense.scss.tcd.ie/research/3dof/vr_user_behaviour_system_design/)
+- [CEAP-360VR](https://github.com/cwi-dis/CEAP-360VR-Dataset)
+- [SSV360](https://github.com/MajedElwardy/SSV360)
 
 ### 1.3 Video and Image Quality Related
 - [Waterloo Exploration Database](https://ece.uwaterloo.ca/~k29ma/exploration/)
@@ -48,17 +96,24 @@
 - [5G Dataset with Channel and Context Metrics](https://github.com/acmmmsys/2020-5Gdataset)
 
 ### 1.5 Others
+
+- [Web QoE Datasets](https://webqoe.telecom-paristech.fr/data/)
+
 - [Image & Video Quality Assessment at LIVE](http://live.ece.utexas.edu/research/Quality/index.htm)
 - [YouTube-8M Segments Dataset](http://research.google.com/youtube8m/index.html)
 - [Downloads @ LFOVIA](https://www.iith.ac.in/~lfovia/downloads.html)
 - [360° SimulatorSickness Data](https://github.com/Telecommunication-Telemedia-Assessment/360-SimulatorSickness-Data)
 - [UT LIVE Repos](https://github.com/utlive)
+- [UMass MMSys Dataset Archive](https://traces.cs.umass.edu/index.php/Mmsys/Mmsys)
+- [mahimahi traces](https://github.com/ravinet/mahimahi/tree/master/traces)
 ## 2. Code and Tools
 ### 2.1 Video Samples and Tools
 - [Big Buck Bunny Video Sample](https://peach.blender.org/download/)
 - [Xiph.org Test Media](https://media.xiph.org/)
 - [Waterloo IVC 4K Video Quality Database](http://ivc.uwaterloo.ca/database/4KVQA.html)
 - [UVG 4K Video dataset](https://github.com/ultravideo/UVG-4K-Dataset)
+- [Multi-Codec Ultra High Definition 8K MPEG-DASH Dataset](https://athena.itec.aau.at/2022/04/multi-codec-ultra-high-definition-8k-mpeg-dash-dataset/)
+- [DashReStreamer](https://github.com/khodzic2/DashReStreamer)
 - [youtube-dl Tool](https://youtube-dl.org/)
 - [FFmpeg](https://ffmpeg.org/)
 - [GPAC](https://github.com/gpac/gpac)
@@ -87,10 +142,11 @@
 - [Open Visual Cloud Immersive Video Samples](https://github.com/OpenVisualCloud/Immersive-Video-Sample)
 - [SRS(Simple Realtime Server)](https://github.com/ossrs/srs)
 - [Node-Media-Server](https://github.com/illuspas/Node-Media-Server)
+- [Puffer](https://github.com/StanfordSNR/puffer)
+- [MergeTB Experimentation Tools](https://gitlab.com/mergetb/exptools)
 
 ### 2.4 Image and Video Quality
 - [PSNR](https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio)
-- NIQE
 - [SSIM](https://ieeexplore.ieee.org/document/1284395)
 - [MS-SSIM](https://ieeexplore.ieee.org/document/1292216)
 - [Netflix VMAF](https://github.com/Netflix/vmaf)
@@ -110,6 +166,7 @@
 - [Objective Quality-of-Experience Model Benchmark](https://github.com/zduanmu/ksqi)
 - [ElasTest Webrtc QoE Meter](https://github.com/elastest/elastest-webrtc-qoe-meter)
 - [CQM: Cumulative quality model](https://github.com/TranHuyen1191/CQM)
+- [ITU-T P.1203 and P.1204 model and development](https://telecommunication-telemedia-assessment.github.io/bitstream_based_models/)
 
 ### 2.7 VR or 360° Streaming
 - [CNN-LSTM-360-Video-ViewPort-Prediction](https://github.com/VideoForage/CNN-LSTM-360-Video-ViewPort-Prediction)
@@ -167,6 +224,9 @@
 - [Youtube traffic analysis](https://www.similarweb.com/website/youtube.com/)
 
 ## 5. Other Lists
+- [awesome-video](https://github.com/krzemienski/awesome-video)
 - [VideoLiterature](https://github.com/VideoForage/Video-Lit)
 - [Video-dev: Community Knowledge Base](https://github.com/video-dev/community-knowledge-base)
 - [Databases and algorithms for image/video quality assessment](https://github.com/sherlockyy/Image-Video-quality-assessments/blob/master/collections.md)
+- [Video-Streaming-Research-Papers](https://github.com/jinyucn/Video-Streaming-Research-Papers)
+- [Video_streaming_paper](https://github.com/HyeonghoBae/Video_streaming_paper)
