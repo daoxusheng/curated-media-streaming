@@ -128,6 +128,8 @@
 - [Kvazaar: HEVC encoder](https://github.com/ultravideo/kvazaar)
 - [H.266/VVC Reference Implementation](https://jvet.hhi.fraunhofer.de/)
 - [Content-aware Video Encoding for Cloud Gaming](https://github.com/mohamedhegazy/CAVE)
+- [AVS3 encoder](https://github.com/uavs3/uavs3e)
+- [AVS3 decoder](https://github.com/uavs3/uavs3d)
 
 ### 2.3 Streaming Tools and Systems
 - [hls.js](https://github.com/video-dev/hls.js)
